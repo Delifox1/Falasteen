@@ -4,9 +4,9 @@
   "description": "Virtual Solidarity Wall",
   "main": "server.js",
   "scripts": {
-  "start": "node backend/server.js"
-},
-
+    "start": "node backend/server.js",
+    "build": "echo 'Building virtual-solidarity-wall frontend'"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "mysql2": "^2.3.0"
