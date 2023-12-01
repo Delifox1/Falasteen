@@ -1,0 +1,125 @@
+body {
+  font-family: 'JosefinSans', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f1f1;
+}
+
+h1 {
+  text-align: center;
+  color: #107c10;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: calc(100% - 22px);
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #e44d26;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: white;
+  color: #e44d26;
+  border: 2px solid #e44d26;
+}
+
+#messagesContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.messageBox {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.message {
+  margin-right: 10px;
+}
+
+.reportButton {
+  background-color: transparent;
+  color: #e44d26;
+  border: none;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 10px;
+  /* Added margin for spacing */
+}
+
+.reportButton:hover {
+  color: #107c10;
+}
+
+#flagImage {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+/* guide.css */
+
+/* Style for the guide section */
+#guide {
+  margin-top: 30px;
+}
+
+#guide h2 {
+  color: #107c10;
+}
+
+#guide ol {
+  padding-left: 20px;
+}
+
+/* Style for the footer */
+footer {
+  background-color: #107c10;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Style for the note section */
+#note {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f1f1;
+  border: 1px solid #ddd;
+  margin-bottom: 60px;
+  /* Adjusted margin-bottom to accommodate the footer */
+}
