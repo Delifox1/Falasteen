@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'frontend', 'index.html'));
 });
 
-app.get('/messages', (req, res) => {
+app.get('/.netlify/functions/server/messages', (req, res) => {
   // Retrieve messages from MySQL database
   pool.query('SELECT * FROM messages', (error, results) => {
     if (error) {
@@ -44,8 +44,7 @@ app.get('/messages', (req, res) => {
   });
 });
 
-
-app.post('/messages', (req, res) => {
+app.post('/.netlify/functions/server/messages', (req, res) => {
   const newMessageText = req.body.message;
 
   // Insert new message into MySQL database
@@ -59,8 +58,7 @@ app.post('/messages', (req, res) => {
   });
 });
 
-
-app.post('/report', (req, res) => {
+app.post('/.netlify/functions/server/report', (req, res) => {
   const messageId = req.body.messageId;
 
   // Update the 'reported' column in the 'messages' table to true
@@ -73,7 +71,6 @@ app.post('/report', (req, res) => {
     }
   });
 });
-
 
 // Start the server
 app.listen(PORT, () => {
