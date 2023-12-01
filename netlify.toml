@@ -1,4 +1,5 @@
 [build]
+  command = "npm install && npm start"
   publish = "frontend"  # Directory where your frontend files are located
   functions = "backend"  # Directory where your backend (server.js) is located
 
